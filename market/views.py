@@ -258,8 +258,8 @@ def get_latest_data2():
                     time=datetime.fromtimestamp(int(corrected_timestamp)),
                     num_transactions=ticker_result['n']
                 )
-            print("Sleep for 20 seconds before getting next stock")
-            time.sleep(20)
+            print("Sleep for 13 seconds before getting next stock")
+            time.sleep(13)
         except Exception as e:
             logger.error(f"Error occurred while processing {ticker}: {e}")
             if Stock.objects.filter(ticker=ticker).count() > 0:

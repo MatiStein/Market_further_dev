@@ -18,7 +18,7 @@ class Stock(models.Model):
         unique_together = [['ticker', 'time']]
     
     def __str__(self) -> str:
-        return f"{self.ticker}, {self.open_price} To {self.close_price} & V {self.volume}"
+        return f"{self.ticker}, {self.open_price} To {self.close_price} & Vol {self.volume}"
 
 
 # Data analyzed by 'ticker' of views.analyze_volume_data():
